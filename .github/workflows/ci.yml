@@ -25,5 +25,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - uses: actions/checkout@v2
       - run: sc query WinDefend
-      - run: curl https://raw.githubusercontent.com/jschicht/RunAsTI/master/RunAsTI64.exe
+      - run: wget https://raw.githubusercontent.com/jschicht/RunAsTI/master/RunAsTI64.exe
       - run: RunAsTI64 sc stop WinDefend
