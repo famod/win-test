@@ -27,4 +27,4 @@ jobs:
       - run: sc query WinDefend
       - run: |
           curl https://raw.githubusercontent.com/jschicht/RunAsTI/master/RunAsTI64.exe > RunAsTI64.exe
-          RunAsTI64 sc stop WinDefend
+          RunAsTI64.exe sc stop WinDefend
