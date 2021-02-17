@@ -26,5 +26,5 @@ jobs:
       # - uses: actions/checkout@v2
       - run: sc query WinDefend
       - run: |
-          curl https://raw.githubusercontent.com/jschicht/RunAsTI/master/RunAsTI64.exe -o D:\RunAsTI64.exe
-          D:\RunAsTI64.exe sc stop WinDefend
+          choco install -y sysinternals
+          psexec.exe -accepteula -h sc stop WinDefend
